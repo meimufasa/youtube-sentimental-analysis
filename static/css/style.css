@@ -1,0 +1,56 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.hero {
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.url_style {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    width: 60%;
+}
+
+.comments-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 40px 20px;
+}
+
+.comment-box {
+    padding: 15px;
+    border-radius: 10px;
+    width: 40%;
+    color: white;
+}
+
+.positive {
+    background-color: green;
+    align-self: flex-start;
+}
+
+.neutral {
+    background-color: gray;
+    align-self: center;
+}
+
+.negative {
+    background-color: red;
+    align-self: flex-end;
+}

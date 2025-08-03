@@ -1,0 +1,19 @@
+    {% extends "index.html" %}
+  
+    {% block content %}
+
+    <div class="comments-container">
+        {% for comment, sentiment in comments.items() %}
+            {% if sentiment == 1 %}
+                <div class="comment-box positive">{{ comment }}</div>
+            {% elif sentiment == 0 %}
+                <div class="comment-box negative">{{ comment }}</div>
+            {% else %}
+                <div class="comment-box neutral">{{ comment }}</div>
+            {% endif %}
+        {% endfor %}
+    </div>
+    
+    {% endblock %}
+
+
